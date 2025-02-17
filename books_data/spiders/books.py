@@ -2,7 +2,7 @@ import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 import datetime
 from pymongo import MongoClient
-client = MongoClient('mongodb+srv://lakshyakaushik:Lakshya12345678@cluster0.kllw6.mongodb.net/')
+client = MongoClient('your-client')
 db = client.scrapy
 def insertToDb(page,title, rating, image, price, inStock):
     collection= db[page]
